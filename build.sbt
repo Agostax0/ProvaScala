@@ -5,5 +5,8 @@ ThisBuild / scalaVersion := "3.3.6"
 lazy val root = (project in file("."))
   .settings(
     name := "ProvaScala",
-    idePackagePrefix := Some("it.unibo.ProvaScala")
+    libraryDependencies ++= Seq(
+      "junit" % "junit" % "4.13.2" % Test,
+      "org.scalatest" %% "scalatest" % "3.2.19" % Test,
+    )
   )
