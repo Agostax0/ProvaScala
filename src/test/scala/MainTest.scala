@@ -8,3 +8,4 @@ class MainTest:
 
     @Test def isMyVarEqualsOne(): Unit =
         assertEquals(1, myVar)
+        
